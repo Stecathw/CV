@@ -76,7 +76,7 @@
                     position: absolute;
                     border-radius: 15px;
                     background: $color-2;
-                    opacity: 75%;
+                    // opacity: 75%;
                     animation: progress 2s ease-out forwards;
     
                     @keyframes progress {
