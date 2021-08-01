@@ -1,0 +1,178 @@
+.knowledge {
+    min-height: $min-height;
+    margin: $content-margins;
+    justify-content:center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 2rem;
+    grid-template-areas: 
+      "Ll O"
+      "Ll H";
+
+    .languages {
+        grid-area: Ll;
+        box-sizing: content-box;
+        border: solid $color-2 2px;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+          "languages"
+          "frameworks";
+        .languagesList {
+            grid-area: languages;
+        }
+        .frameworksList {
+            grid-area: frameworks;
+        }
+        
+        .xp {
+            display: flex;
+            justify-content: space-between;
+            font-size: .8rem;
+            span {
+                width: 33%;
+
+                &:nth-child(2) {
+                    text-align: center; 
+                }
+                &:nth-child(3) {
+                    text-align: right;
+                }
+                &:nth-child(2):after, &:nth-child(3):after {
+                    content: '';
+                    background: $color-1;
+                    position: absolute;
+                    height: 345px;
+                    width: 1px;
+                    transform: translate(-15px, 25px);
+                }
+            }
+        }
+        .languageStatus {
+            margin: 1rem 1rem;
+            
+            h4 {
+                margin: 0;
+                margin-bottom: 0.2rem;
+                padding-bottom: 2px;
+                span {                    
+                    margin-right: 10px;
+                }
+            }    
+            .progression {
+                height: 0.6rem;
+                background-color: transparent;
+                border-radius: 15px;
+                position: relative;
+    
+                &:after {
+                    content: '';
+                    width: 0;
+                    height: 0.6rem;
+                    position: absolute;
+                    border-radius: 15px;
+                    background: $color-2;
+                    opacity: 75%;
+                    animation: progress 2s ease-out forwards;
+    
+                    @keyframes progress {
+                        to {
+                            width: 100%;
+                        }
+                    }
+                }       
+            }
+        }
+    }
+    .otherskills {
+        grid-area: O;
+        box-sizing: content-box;
+        border: solid $color-2 2px;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        li {
+            list-style-type: square;
+            animation: fadeIn 0.5s linear;
+            animation-fill-mode: both;
+            
+        }
+        $total-items: 13;
+        // Set delay per List Item
+        @for $i from 1 through $total-items {
+            li:nth-child(#{$i}) {
+                animation-delay: .25s * $i;
+            }
+        }        
+        // Keyframe animation
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                top: 100px;
+            }
+            75% {
+                opacity: 0.5;
+                top: 0px;
+            }
+            100% {
+                opacity: 1;
+            }
+        }        
+    }
+    .hobbies {
+        grid-area: H;
+        box-sizing: content-box;
+        border: solid $color-2 2px;
+        padding: 1rem 2rem;
+        border-radius: 25px;
+        li {
+            list-style-type: square;
+            animation: fadeIn 0.5s linear;
+            animation-fill-mode: both;
+        }
+        $total-items: 4;
+        @for $i from 1 through $total-items {
+            li:nth-child(#{$i}) {
+                animation-delay: .25s * $i;
+            }
+        }        
+        // Keyframe animation
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                top: 100px;
+            }
+            75% {
+                opacity: 0.5;
+                top: 0px;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .knowledge {
+        grid-template-columns: 1fr 1fr !important;
+        grid-row-gap: 2rem;
+        grid-template-areas: 
+          "Ll Ll"
+          "O H";
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .knowledge {
+        grid-template-columns: 1fr !important;
+        grid-row-gap: 0.5rem;
+        grid-template-areas: 
+          "Ll"
+          "O" 
+          "H";
+    }
+}

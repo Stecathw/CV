@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Roboto&display=swap');
+
+$font-1: 'Iceland', cursive;
+$font-2: 'Roboto', sans-serif;
+
+$color-1: #1c100b;
+$color-2: #1c89b4;
+$color-3: #f6f2f0;
+$color-4: #f58533;
+
+$min-height : 75vh;
+$content-margins : 1rem 1.5rem;
+
+@mixin Center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: $font-1;
+    color: black;
+    min-height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+

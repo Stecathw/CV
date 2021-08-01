@@ -1,0 +1,42 @@
+.footer {
+    transform: translateX(-10px);
+    width: 100%;
+    border-radius: 25px;
+    background-color: $color-2;
+    height: fit-content;
+    position: relative;
+    padding: 10px;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    grid-template-areas: "1" "2";
+    .social {
+        grid-area: 1;
+        @include Center;
+
+        ul {
+            display: inline-block;
+            margin: 0 2rem;
+            padding: 0;
+            li {
+                margin: 0;
+                padding: 0;
+            }
+            svg {
+                color: $color-3;
+            }
+        }
+    }
+    .signature {
+        grid-area: 2;
+        margin-top: 0.5rem;
+        color: $color-3;
+        @include Center;
+        p {
+            margin: 0;
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+    }
+}

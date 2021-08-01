@@ -1,0 +1,164 @@
+.experiences {    
+    min-height: $min-height;
+    margin: $content-margins;
+    @include Center;
+    flex-direction: column;
+    
+    h2 {
+        text-align: center;
+    }
+    .timeline-container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        /* border: solid $color-2 2px; */
+        border-radius: 25px;
+        width: 100%;
+
+        &:after {
+            content: '';
+            position: absolute;
+            background-color: $color-2;
+            width: 4px;
+            height: 100%;
+            left: calc(50% - 2px);
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: calc(50% - 10px);
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid $color-2;
+            transform: translateY(-10px);
+        }
+
+        .timeline-item {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 30px;
+            margin: 10px 0;           
+            width: 50%;
+            height: fit-content;
+            right: 50px;
+
+           
+            &:nth-child(odd) {
+                align-self: flex-end;
+                justify-content: flex-start;
+                padding-left: 30px;
+                padding-right: 0;
+                right: 0;
+                left: 50px;
+
+                .timeline-item-content {
+                    align-items: flex-start;
+                    text-align: left;
+                    &:after {
+                        right: auto;
+                        left: -10px;
+                        /* box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2); */
+                    }
+                }
+                .circle {
+                    right: auto;
+                    left: -34px;
+                    .date {
+                        right: 25px;
+                        left: auto;
+                    }
+                }
+
+            }
+            .timeline-item-content {
+                color: $color-3;
+                background-color: $color-2;
+                /* opacity: 75%; */
+                /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+                border-radius: 25px;
+                position: relative;
+                display: flex;
+                align-items: flex-end;
+                text-align: right;
+                flex-direction: column;
+                padding: 1rem;
+                width: 300px;
+                max-width: 70%;
+                z-index: 2;
+                animation: open 2s ease-out;    
+                @keyframes open {
+                    from {
+                        width: 0%;
+                        min-height: 100%;
+                    }
+                    to {
+                        width: 300px;
+                    }
+                } 
+
+                &:after {
+                    content: '';
+                    background-color: $color-2;  
+                    /* box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.2); */              
+                    position: absolute;
+                    transform: rotate(45deg);
+                    width: 20px;
+                    height: 20px;
+                    right: -10px;
+                    top: calc(50% - 10px);
+                    z-index: 0;
+                }
+                h4, h6 {
+                    margin: 0.5rem 0;
+                }
+            }
+            .circle {
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                background-color: aliceblue;
+                border: solid $color-2 4px;
+                top: calc(50% - 15px);
+                right: -34px;
+                padding-right: 0.5px;
+                z-index: 3;
+                }
+                .date {
+                    position:absolute;
+                    padding: 0 10px;
+                    left: 25px;
+                    top: 2.5px; 
+                }
+                .item-category-icon {
+                    position: absolute;
+                    right: calc(50% - 8px);
+                    top: calc(50% - 9px);  
+                    animation: spin 2s;    
+                    @keyframes spin {
+                        from {
+                            transform: rotate(0deg);
+                        }
+                        to {
+                            transform: rotate(360deg);
+                        }                  
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .experiences {
+        .timeline-container {
+            .timeline-item {
+                .timeline-item-content {
+                    max-width: 75%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.home { 
+    transform: translateX(10px) ;
+    @include Center;
+    .home-content {
+        border-radius: 25px;
+        margin: $content-margins;
+        min-height: $min-height;
+        .content {
+            margin-top: 10vh;
+            align-items: center;
+            h1, h2, p {
+                text-align: center;
+            }
+            p {
+                font-size: 22px;
+                padding: 2rem 10rem;
+            }
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: auto;
+                width: 20%;
+            }
+        }
+        .pdf {
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+            text-align: center;
+            a {
+                color: $color-3;
+                background: $color-2;
+                padding: 1rem 2rem;
+                border-radius: 25px;
+                box-shadow: 0 1px 1px rgb(15, 15, 15);
+                transition: 0.2s ease;
+            }
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .home {
+        .content {
+            h1, h2 {
+                display: none;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            img {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .home {
+        .content {
+            p {
+                padding: 0 !important;
+            }
+        }
+    }
+}

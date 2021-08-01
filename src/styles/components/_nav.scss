@@ -1,0 +1,193 @@
+.navbar {
+    transform: translateX(-10px);
+    background-color: $color-2;
+    border-radius: 25px;
+    display: grid;
+    position : relative;
+    padding: 10px;
+    width:100%;
+    @include Center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "1"
+        "2"
+        "3";
+
+    .profile {
+        grid-area: "1";
+        text-align: center;
+        position: relative;
+        padding-left: 1rem;
+        #profile-img {
+            position: relative;
+            height: auto;
+            width: 25%;
+            padding-top: 1rem;
+        }
+        h2, h3 {
+            color: $color-3;
+            margin: 0;
+        }
+    }
+    
+    .spacing {
+        grid-area: "2";
+    }
+    
+    .navLinks {
+        grid-area: "3";
+        display: grid;
+        padding-right: 5rem;
+        position: relative;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            li {
+                font-size: 1.5rem;
+                display: inline;
+                position: relative;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                
+                a {
+                    color: $color-3;
+                }
+                &:hover svg {
+                    transform: rotate(-20deg);
+                }
+                .navActive {
+                    color: $color-4;
+                }
+                svg {
+                    position: absolute;        
+                    transition: 0.2s ease;
+            
+                }
+                span {
+                    margin-left: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .navbar {
+        grid-template-areas: "1";
+        grid-template-columns: 1fr;
+        .profile {
+            display: none;
+        }
+        .navLinks {
+            width: 100%;            
+            justify-content: center;
+            padding: 0;
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            span {
+                
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .navLinks {        
+        ul {            
+            display: flex;
+            justify-content: space-between;
+            transform: translateX(-4px);
+            li {
+                margin: 0 0rem;
+            }
+            span {     
+                margin-left: 1.4rem !important;           
+                font-size: 0.5rem;
+            }
+            svg {
+
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 765px) {
+    .navLinks {        
+        ul {
+            display: block !important;
+            li {
+                justify-content: space-between !important ;
+                margin: 0 1rem;
+            }
+            span {
+                
+                display: none;
+            }
+            svg {
+                font-size: 1.5rem;
+                
+            }
+        }
+    }
+}
+@media screen and (max-width: 430px) {
+    .navLinks {      
+        place-self: center;
+        ul {
+            
+            li {
+                margin: 0 .8rem;
+            }
+            svg {
+                font-size: 1.4rem;                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 386px) {
+    .navLinks {        
+        ul {
+            
+            li {
+                margin: 0 .7rem;
+            }
+            svg {
+                font-size: 1.3rem;                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .navLinks {        
+        ul {            
+            li {
+                margin: 0 .6rem;
+            }
+            svg {
+                font-size: 1.2rem;                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .navLinks {        
+        ul {            
+            li {
+                margin: 0 .3rem;
+            }
+            svg {
+                font-size: 1.2rem;                
+            }
+        }
+    }
+}

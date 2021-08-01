@@ -1,0 +1,185 @@
+.portfolio {
+    min-height: $min-height;
+    margin: $content-margins;
+    @include Center;
+    flex-direction: column;    
+    h2 {
+        text-align: center;
+    }
+    .projects-container {
+        display: grid;
+        justify-content:center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 2rem;
+        grid-column-gap: 4rem;
+
+        .project-item-content-face {
+            background-color: $color-2;
+            color: $color-3;
+            border-radius: 25px;
+            width: 450px;
+            height: 450px;
+            display: grid;
+            text-align: center;            
+            box-shadow: 0 1px 5px rgb(15, 15, 15);
+            grid-template-rows: 20% 55% 25%;
+            grid-template-areas: 
+              "1"
+              "2"
+              "3";
+            h4 {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: larger;
+                grid-area: 1;
+                @include Center;
+            }
+            img {
+                grid-area: 2;
+                margin: 0 auto;
+                width: 440px;
+                height: auto;
+                box-shadow: 0 1px 1px rgb(15, 15, 15);
+                // box-shadow: 0 2px 6px #333;
+                border-radius: 4px;
+                @include Center;
+            }
+            .project-item-more {
+                @include Center;
+                grid-area: 3;              
+                svg {
+                    font-size: 2rem;
+                }
+                span:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                    transform: rotate(10deg);
+                    transition: 0.2s ease-in-out;
+                    color: $color-4;
+                }
+            }
+        }
+        .project-item-content-pile {
+
+            background-color: $color-2;
+            color: $color-3;
+            border-radius: 25px;
+            width: 450px;
+            height: 450px;
+            display: grid;
+            text-align: center; 
+            grid-template-rows: 15% 15% 40% 15% 15%;
+            box-shadow: 0 1px 5px rgb(15, 15, 15);
+            grid-template-areas: 
+              "1"
+              "2"
+              "3"
+              "4"
+              "5";
+            animation: popup .6s ease forwards;
+            transform: scale(0);
+            transform-origin: center;
+            @keyframes popup {
+                to {
+                  transform: scale(1);
+                } 
+              }
+            .project-item-languages {
+                grid-area: 1;
+                @include Center;
+                svg {
+                    margin: 0 1rem;
+                    font-size: 1.8rem;
+                }
+                
+            }
+            .project-item-frameworks {
+                grid-area: 2;
+                svg {
+                    margin: 0 1rem;
+                    font-size: 1.8rem;
+                }
+            }
+            .project-item-description {
+                grid-area: 3;
+                padding: 2rem;
+                p {
+                    font-size: 18px;
+                }
+            }
+            .project-item-links {
+                @include Center;
+                grid-area: 4;
+                             
+                svg {
+                    font-size: 1.5rem;
+                    margin: 0 1rem;
+                }
+                svg:hover {
+                    transform: translateY(-5px);
+                }
+                #youtube {
+                    color: red;
+                }
+            }
+            .project-item-less {
+                grid-area: 5;
+                @include Center;
+                span {
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: large;
+                    padding: 0.8rem 1rem;
+                    border-radius: 25px;
+                    border: 1px solid $color-3;
+                }
+                span:hover {
+                    transform: scale(1.1);
+                }
+
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1023px) {
+    .projects-container {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .projects-container {
+        .project-item-content-face {
+            width: 375px !important;
+            height: 380px !important;
+            img {
+                width: 355px !important;
+            }
+        }
+        .project-item-content-pile {
+            width: 375px !important;
+            height: 380px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .projects-container {
+        .project-item-content-face {
+            width: 325px !important;
+            height: 330px !important;
+            img {
+                width: 300px !important;
+            }
+        }
+        .project-item-content-pile {
+            width: 325px !important;
+            height: 330px !important;
+        }
+    }
+}

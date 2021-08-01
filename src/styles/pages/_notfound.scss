@@ -1,0 +1,24 @@
+.notFound {
+    min-height: $min-height;
+    margin: $content-margins;
+    @include Center;
+    flex-direction: column;  
+    h1 {
+        font-weight: bold;
+        font-size: xx-large;
+        text-transform: uppercase;
+        color: $color-4;
+    }
+    span {
+        padding-left: 10px;
+    }
+    svg {
+        transform: translateY(4px);
+    }
+    span:hover {
+        color: $color-4;
+        svg {
+            color: $color-4;
+        }        
+    }
+}
