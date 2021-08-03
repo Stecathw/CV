@@ -106,6 +106,7 @@
             transform: translateX(-4px);
             li {
                 margin: 0 0rem;
+                padding: 0 .8rem !important;
             }
             span {     
                 margin-left: 1.4rem !important;           
@@ -126,6 +127,7 @@
             li {
                 justify-content: space-between !important ;
                 margin: 0 1rem;
+                padding: 0 1rem !important;
             }
             span {
                 
@@ -154,7 +156,7 @@
     }
 }
 
-@media screen and (max-width: 386px) {
+@media screen and (max-width: 392px) {
     .navLinks {        
         ul {
             
@@ -168,7 +170,7 @@
     }
 }
 
-@media screen and (max-width: 362px) {
+@media screen and (max-width: 372px) {
     .navLinks {        
         ul {            
             li {
@@ -181,7 +183,7 @@
     }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 358px) {
     .navLinks {        
         ul {            
             li {

@@ -1,5 +1,4 @@
 .home { 
-    transform: translateX(10px) ;
     @include Center;
     .home-content {
         border-radius: 25px;
@@ -65,5 +64,11 @@
                 padding: 0 !important;
             }
         }
+        .pdf {
+            a {
+                padding: .6rem 1.2rem !important;
+            }
+        }
     }
 }
+
