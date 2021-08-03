@@ -9,9 +9,6 @@ import { FiMail } from "react-icons/fi";
 import { GiSmartphone } from "react-icons/gi";
 
 const Contact = () => {
-
-
-
     return (
         <div>
             <Nav/>
@@ -27,9 +24,7 @@ const Contact = () => {
                 <div className="contact-diplome">
                     <a href="./media/diplome/CS50x.png" target="_blank" rel="noopener noreferrer"><img src="./media/diplome/CS50x.png" alt=""></img></a>
                     <a href="./media/diplome/CS50w.png" target="_blank" rel="noopener noreferrer"><img src="./media/diplome/CS50W.png" alt=""></img></a>
-                </div>
-
-                
+                </div>                
             </div>
             <Footer/>
         </div>

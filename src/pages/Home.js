@@ -5,9 +5,9 @@ import Footer from '../components/Footer';
 
 const Home = () => {
     return (
-        <>
+        <div>
         <Nav />
-            <div className="home">                
+            <div className="home" data-testid="HomePage">                
                 <div className="home-content">
                     <div className="content">
                         <img src="./media/avatar.png" alt="profile-img" id="profile-img"/>
@@ -29,12 +29,12 @@ const Home = () => {
                         <hr/>
                     </div>
                     <div className="pdf">
-                        <a href="./media/CV.pdf" target="_blank">Télecharger mon CV</a>
+                        <a href="./media/CV.pdf" target="_blank" data-testid="CV_pdf">Télécharger mon CV</a>
                     </div>
                 </div>                
             </div>
         <Footer />
-        </>
+        </div>
     );
 };
 
