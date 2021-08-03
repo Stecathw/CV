@@ -18,8 +18,8 @@ const Home = () => {
                             Bienvenue sur mon CV en ligne.<br/><br/><br/>
                             J'ai 26 ans et me suis reconverti dans le développement web afin de retrouver une forte motivation intellectuelle.<br/>
                             Je code et développe principalement en Python et Javascript. J'ai de bonnes connaissances sur le framework Django et suis familié de React.<br/>
-                            Autodidacte, j’apprends vite et je serais ravi de mettre mes qualités au service de votre entreprise.<br/>
-                            J'apprécie les challenges et je suis toujours ravis d'apprendre et enthousiaste à l'idée d'accomplir mes missions tout en approfondissant mes connaissances.<br/><br/>
+                            Autodidacte, j’apprends vite et je serai ravi de mettre mes qualités au service de votre entreprise.<br/>
+                            J'apprécie les challenges et je suis toujours ravi d'apprendre et enthousiaste à l'idée d'accomplir mes missions tout en approfondissant mes connaissances.<br/><br/>
                             
                         </p>
                         <hr/>
