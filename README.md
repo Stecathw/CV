@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### BUG AND FIXES
+
+ersion 92.0.4515.107 (Official Build) (64-bit)
+
+- Minor : cursor appears when focusing
+ pointer on avatar image and titles. Version 92.0.4515.107 (Official Build) (64-bit)
+ 
+- Icon alignments on Version 92.0.4515.107 (Official Build) (64-bit)
+ 
+ - Button DL : horizontal scroll appears when focusing on it
