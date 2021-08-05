@@ -79,3 +79,5 @@ ersion 92.0.4515.107 (Official Build) (64-bit)
 - Icon alignments on Version 92.0.4515.107 (Official Build) (64-bit)
  
  - Button DL : horizontal scroll appears when focusing on it
+
+- Police, angle for border and more dark color
