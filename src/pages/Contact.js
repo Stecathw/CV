@@ -17,7 +17,7 @@ const Contact = () => {
                     <h2>Contactez-moi</h2>
                     <li>
                         <ul><FaMapMarkerAlt/><span>Limoges</span></ul>
-                        <ul><GiSmartphone/><span>06 85 93 47 31</span></ul>
+                        <ul><GiSmartphone/><span>Uniquement par mail</span></ul>
                         <ul><FiMail/><span>william_sainte_catherine@hotmail.com</span></ul>
                     </li>
                 </div>
