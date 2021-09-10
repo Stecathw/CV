@@ -18,7 +18,7 @@ const Footer = () => {
                 </ul>
                 <ul>
                     <li>
-                        <a href="https://www.facebook.com/william.saintecatherine/" referrerPolicy="no-referer" rel="noreferrer" target="_blank"><FaFacebookSquare/></a>
+                        <a href="https://www.facebook.com/" referrerPolicy="no-referer" rel="noreferrer" target="_blank"><FaFacebookSquare/></a>
                     </li>
                 </ul>
             </div>
