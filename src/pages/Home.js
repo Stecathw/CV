@@ -10,11 +10,11 @@ const Home = () => {
             <div className="home" data-testid="HomePage">                
                 <div className="home-content">
                     <div className="content">
-                        <img src="./media/avatar.png" alt="profile-img" id="profile-img"/>
-                        <h1>William SAINTE-CATHERINE</h1>
-                        <h2>Développeur web</h2>
+                        <img src="./media/avatar.png" alt="profile-img" id="profile-img" data-testid="img"/>
+                        <h1 data-testid="h1">William SAINTE-CATHERINE</h1>
+                        <h2 data-testid="h2">Développeur web</h2>
                         <hr/>
-                        <p>
+                        <p data-testid="intro-text">
                             Bienvenue sur mon CV en ligne.<br/><br/><br/>
                             J'ai 26 ans et me suis reconverti dans le développement web afin de retrouver une forte motivation intellectuelle.<br/>
                             En effet, mes compétences de technicien m'ont permis de financer et préparer cette reconversion.<br/>                            
