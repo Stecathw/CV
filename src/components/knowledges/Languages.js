@@ -14,19 +14,19 @@ const Languages = () => {
         {id:1, name: "Javascript", xp: "8", icon: <SiJavascript/>},
         {id:2, name: "Html", xp: "11", icon: <FaHtml5/>},
         {id:3, name: "CSS", xp: "11", icon: <SiCss3/>},
-        {id:4, name: "SQL/SQlite3", xp: "3", icon:<DiSqllite/>},
+        {id:4, name: "SQL/SQlite3", xp: "6", icon:<DiSqllite/>},
         {id:5, name: "C", xp: "2", icon: <FaCuttlefish/>},     
         {id:6, name: "Sass", xp: "2", icon: <FaSass/>},
     ])
 
     const [frameworks] = useState([
         {id:0, name: "Django", xp: "11", icon: <SiDjango/>},
-        {id:1, name: "Bootstrap", xp: "5", icon: <SiBootstrap/>},
+        {id:1, name: "Bootstrap", xp: "6", icon: <SiBootstrap/>},
         {id:2, name: "React", xp: "3", icon: <FaReact/>},
         {id:3, name: "Flask", xp: "2", icon: <SiFlask/>},        
         {id:4, name: "Dash", xp: "2", icon: <RiDashboardLine/>},        
-        {id:5, name: "Pandas", xp: "2", icon: <GiPanda/>},        
-        {id:6, name: "Selenium", xp: "2", icon: <GiSelect/>},        
+        {id:5, name: "Pandas", xp: "6", icon: <GiPanda/>},        
+        {id:6, name: "Selenium", xp: "6", icon: <GiSelect/>},        
     ])
 
 

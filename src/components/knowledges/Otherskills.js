@@ -7,7 +7,7 @@ const Otherskills = () => {
         {id:2, language: "Chinois", lvl: "A2"},
     ])
 
-    const [devs] = useState(["Visual Studio Code", "Github/git", "Google suite", "Microsoft office", "Montage photos/vidéos"])
+    const [devs] = useState(["Visual Studio Code", "Github/git", "Google suite", "Microsoft office", "Solidworks, PrusaSlicer", "Montage photos/vidéos"])
 
     const [skills] = useState(["Persévérance", "Curiosité", "Adapdation", "Analyse", "Ouverture d'esprit"])
 
