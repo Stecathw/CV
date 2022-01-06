@@ -10,17 +10,17 @@ import { GiPanda, GiSelect } from "react-icons/gi"
 const Languages = () => {
 
     const [languages] = useState([
-        {id:0, name: "Python", xp: "8", icon: <FaPython/>},
-        {id:1, name: "Javascript", xp: "6", icon: <SiJavascript/>},
-        {id:2, name: "Html", xp: "6", icon: <FaHtml5/>},
-        {id:3, name: "CSS", xp: "6", icon: <SiCss3/>},
+        {id:0, name: "Python", xp: "11", icon: <FaPython/>},
+        {id:1, name: "Javascript", xp: "8", icon: <SiJavascript/>},
+        {id:2, name: "Html", xp: "11", icon: <FaHtml5/>},
+        {id:3, name: "CSS", xp: "11", icon: <SiCss3/>},
         {id:4, name: "SQL/SQlite3", xp: "3", icon:<DiSqllite/>},
         {id:5, name: "C", xp: "2", icon: <FaCuttlefish/>},     
         {id:6, name: "Sass", xp: "2", icon: <FaSass/>},
     ])
 
     const [frameworks] = useState([
-        {id:0, name: "Django", xp: "7", icon: <SiDjango/>},
+        {id:0, name: "Django", xp: "11", icon: <SiDjango/>},
         {id:1, name: "Bootstrap", xp: "5", icon: <SiBootstrap/>},
         {id:2, name: "React", xp: "3", icon: <FaReact/>},
         {id:3, name: "Flask", xp: "2", icon: <SiFlask/>},        
