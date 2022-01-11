@@ -20,6 +20,9 @@ const Home = () => {
                             Autonome, j’apprends vite et je serai ravi de mettre mes qualités au service de votre entreprise.<br/>
                             J'apprécie les challenges et je suis toujours motivé pour en apprendre d'avantage et enthousiaste à l'idée d'accomplir mes missions.<br/><br/>                            
                         </p>
+                        
+                        <a href="https://github.com/Stecathw/CS50" target="_blank" rel="noopener noreferrer">Accéder à mon github (CS50)</a>
+                        
                         <hr/>
                     </div>
                     <div className="pdf">
