@@ -11,22 +11,23 @@ const Languages = () => {
 
     const [languages] = useState([
         {id:0, name: "Python", xp: "11", icon: <FaPython/>},
-        {id:1, name: "Javascript", xp: "8", icon: <SiJavascript/>},
+        {id:1, name: "Javascript", xp: "11", icon: <SiJavascript/>},
         {id:2, name: "Html", xp: "11", icon: <FaHtml5/>},
         {id:3, name: "CSS", xp: "11", icon: <SiCss3/>},
+        {id:6, name: "Sass", xp: "6", icon: <FaSass/>},
         {id:4, name: "SQL/SQlite3", xp: "6", icon:<DiSqllite/>},
-        {id:5, name: "C", xp: "2", icon: <FaCuttlefish/>},     
-        {id:6, name: "Sass", xp: "2", icon: <FaSass/>},
+        {id:5, name: "C", xp: "2", icon: <FaCuttlefish/>},   
+
     ])
 
     const [frameworks] = useState([
         {id:0, name: "Django", xp: "11", icon: <SiDjango/>},
-        {id:1, name: "Bootstrap", xp: "6", icon: <SiBootstrap/>},
-        {id:2, name: "React", xp: "3", icon: <FaReact/>},
-        {id:3, name: "Flask", xp: "2", icon: <SiFlask/>},        
-        {id:4, name: "Dash", xp: "2", icon: <RiDashboardLine/>},        
+        {id:2, name: "React", xp: "10", icon: <FaReact/>},       
         {id:5, name: "Pandas", xp: "6", icon: <GiPanda/>},        
-        {id:6, name: "Selenium", xp: "6", icon: <GiSelect/>},        
+        {id:6, name: "Selenium", xp: "6", icon: <GiSelect/>},
+        {id:1, name: "Bootstrap", xp: "6", icon: <SiBootstrap/>},
+        {id:3, name: "Flask", xp: "2", icon: <SiFlask/>},        
+        {id:4, name: "Dash", xp: "2", icon: <RiDashboardLine/>},         
     ])
 
 

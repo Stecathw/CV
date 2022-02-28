@@ -16,12 +16,13 @@ const Home = () => {
                         <hr/>
                         <p data-testid="intro-text">
                             Bienvenue sur mon CV en ligne.<br/><br/><br/>
-                            Je code et développe principalement en Python et Javascript. J'ai de bonnes connaissances sur le framework Django et suis familié de React.<br/>
+                            Je code et développe principalement en Python et Javascript. J'ai de bonnes connaissances sur le framework Django ainsi que React.<br/>
+                            J'apprécie particulièrement le développement front-end.<br/>
                             Autonome, j’apprends vite et je serai ravi de mettre mes qualités au service de votre entreprise.<br/>
                             J'apprécie les challenges et je suis toujours motivé pour en apprendre d'avantage et enthousiaste à l'idée d'accomplir mes missions.<br/><br/>                            
                         </p>
-                        
-                        <a href="https://github.com/Stecathw/CS50" target="_blank" rel="noopener noreferrer">Accéder à mon github (CS50)</a>
+                        <a href="https://space-tourism-challenge.herokuapp.com/" target="_blank" rel="noopener noreferrer">Mon dernier projet LIVE (site Space Tourism Challenge)</a>
+                        <a href="https://github.com/Stecathw/" target="_blank" rel="noopener noreferrer">Accéder directement à mon github</a>
                         
                         <hr/>
                     </div>

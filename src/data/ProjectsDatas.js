@@ -5,7 +5,7 @@ const ProjectsDatas = [
         title:'Podologie',
         languages: ['Python', 'Javascript', 'HTML', 'CSS'],
         librairies: ['Django'],
-        description: 'Projet final du CS50web. Site vitrine entièrement responsive avec formulaire de prise de rendez-vous pour la patientèle.',
+        description: 'Projet final du CS50web. Site vitrine entièrement responsive avec formulaire de prise de rendez-vous pour la patientèle. Projet non déployé.',
         codeURL: 'https://github.com/Stecathw/Podiatry',
         videoURL: 'https://www.youtube.com/watch?v=aHKf0iKfxl0',
         imageURL: ['./media/podologie/home.png'], 
@@ -32,6 +32,36 @@ const ProjectsDatas = [
         videoURL: 'https://www.youtube.com/watch?v=up0ZFr7erMM',
         imageURL: ['./media/network/clone.png'],
     },   
+    {
+        id:3,
+        title:'Space Tourism Challenge',
+        languages: ['Javascript', 'HTML', 'CSS'],
+        librairies: ['React'],
+        description: 'Projet front-end à partir de la maquette Figma',
+        codeURL: 'https://github.com/Stecathw/SpaceTourism',
+        siteURL: 'https://space-tourism-challenge.herokuapp.com/',
+        imageURL: ['./media/spacetourism/space.png'],
+    },
+    {
+        id:4,
+        title:'BLOG API',
+        languages: ['Python'],
+        librairies: ['Django', 'DRF'],
+        description: 'Projet de REST API python-django et DRF (django rest framework). Le but est de construire une base de données de mes vols avec une mise en relation de mes récits, photos etc. Projet en cours de développement plutôt "proof of concept".',
+        codeURL: 'https://github.com/Stecathw/Blog_RestAPI',
+        imageURL: ['./media/DRF/endpoints.png'],
+    },
+    {
+        id:5,
+        title:'BLOG',
+        languages: ['HTML, CSS, Javascript'],
+        librairies: ['React'],
+        description: 'Blog connecté à ma REST API. Une partie classique de blog mais également une map intéractive de tous mes vols XC au même endroit (utilisant google map API). Proof of concept pour le moment, en développement',
+        codeURL: 'https://github.com/Stecathw/Blog_REACT',
+        imageURL: ['./media/blog/blog.png'],
+    },
+    
+    
 ]
 
 export default ProjectsDatas;
