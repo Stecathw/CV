@@ -38,9 +38,11 @@
             }
         }
         .pdf {
-            margin-top: 10vh;
             margin-bottom: 5vh;
             text-align: center;
+            width: fit-content;
+            margin: auto;
+            margin-top: 10vh;
             a {
                 color: $color-3;
                 background: $color-2;
