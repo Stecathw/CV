@@ -19,9 +19,11 @@ const ProjectItem = (props) => {
             <div className="project-item-content-face">                     
                 <h4>{data.title}</h4>
                 {data.imageURL.map((image) => (
-                        <a href={data.siteURL} target='_blank' rel="noopener noreferrer">
+                    data.siteURL?
+                        <a href={data.siteURL} target='_blank' rel="noopener noreferrer" title={data.siteURL}>
                             <img src={image} alt="" key={image}></img>
-                        </a>)
+                        </a>
+                        : <img src={image} alt="" key={image}></img>)
                     )}
 
                 <div className="project-item-more">
@@ -47,8 +49,10 @@ const ProjectItem = (props) => {
                     <p>{data.description}</p>
                 </div>
                 <div className="project-item-links">
-                    <a href={data.videoURL} rel="noopener noreferrer" target="_blank" id="youtube"><FaYoutube/></a>
-                    <a href={data.codeURL} rel="noopener noreferrer" target="_blank"><FaGithubSquare/></a>
+                    {data.videoURL && 
+                        <a href={data.videoURL} rel="noopener noreferrer" target="_blank" id="youtube"><FaYoutube/></a>}
+                    {data.codeURL && 
+                        <a href={data.codeURL} rel="noopener noreferrer" target="_blank"><FaGithubSquare/></a>}                    
                 </div>  
                 <div className="project-item-less">
                     <span onClick={HandleMoreInfo}>Retour</span>
