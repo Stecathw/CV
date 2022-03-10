@@ -37,12 +37,13 @@
                 text-decoration: underline;
             }
         }
-        .pdf {
+        .pdf {            
             margin-bottom: 5vh;
             text-align: center;
             width: fit-content;
-            margin: auto;
-            margin-top: 10vh;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 5vh;
             a {
                 color: $color-3;
                 background: $color-2;
@@ -79,6 +80,9 @@
         .content {
             p, a {
                 padding: 0 !important;
+                #last-project {
+                    padding-bottom: 1vh !important;
+                }
             }
         }
         .pdf {

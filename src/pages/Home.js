@@ -25,6 +25,7 @@ const Home = () => {
                             target="_blank" 
                             rel="noopener noreferrer"
                             title="Site: Space Tourism"
+                            id="last-project"
                         >
                             Mon dernier projet LIVE (site Space Tourism Challenge)
                         </a>
