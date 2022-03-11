@@ -10,7 +10,7 @@ const Home = () => {
             <div className="home" data-testid="HomePage">                
                 <div className="home-content">
                     <div className="content">
-                        <img src="./media/avatar.png" alt="profile-img" id="profile-img" data-testid="img"/>
+                        <img src="./media/profil.jpg" alt="profile-img" id="profile-img" data-testid="img"/>
                         <h1 data-testid="h1">William SAINTE-CATHERINE</h1>
                         <h2 data-testid="h2">Développeur web</h2>
                         <hr/>

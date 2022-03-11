@@ -20,6 +20,7 @@
                 margin-right: auto;
                 height: auto;
                 width: 20%;
+                border-radius: 25px;
             }
             a {
                 display: block;
@@ -80,9 +81,14 @@
         .content {
             p, a {
                 padding: 0 !important;
-                #last-project {
-                    padding-bottom: 1vh !important;
-                }
+
+            }
+            img {
+                width: 25vw !important;
+            }
+            #last-project {
+                margin-bottom: 1vh;
+                // padding-bottom: 1vh !important;
             }
         }
         .pdf {

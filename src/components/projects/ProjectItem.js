@@ -18,12 +18,12 @@ const ProjectItem = (props) => {
         return (
             <div className="project-item-content-face">                     
                 <h4>{data.title}</h4>
-                {data.imageURL.map((image) => (
+                {data.imageURL.map((image, _index) => (
                     data.siteURL?
                         <a href={data.siteURL} target='_blank' rel="noopener noreferrer" title={data.siteURL}>
-                            <img src={image} alt="" key={image}></img>
+                            <img src={image} alt="" key={_index}></img>
                         </a>
-                        : <img src={image} alt="" key={image}></img>)
+                        : <img src={image} alt="" key={_index}></img>)
                     )}
 
                 <div className="project-item-more">
