@@ -34,12 +34,12 @@ const Nav = () => {
                             <span>Compétences</span>
                         </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink exact to="/experiences" className="navLink" activeClassName="navActive">
                             <MdWork/>
                             <span>Expériences</span>
                         </NavLink>
-                    </li>
+                    </li> */}
                     <li>
                         <NavLink exact to="/portfolio" className="navLink" activeClassName="navActive">
                             <FaImages/>
