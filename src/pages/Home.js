@@ -17,10 +17,18 @@ const Home = () => {
                         <p data-testid="intro-text">
                             Bienvenue sur mon CV en ligne.<br/><br/><br/>
                             Je code et développe principalement en Python et Javascript avec les frameworks Django et React.<br/>
-                            J'apprécie particulièrement le développement front-end et aime rendre l'expérience utilisateur agréable.<br/>
+                            J'apprécie le développement full stack et aime rendre l'expérience utilisateur agréable.<br/> 
                             Autonome, j’apprends vite et je serai ravi de mettre mes qualités au service de votre entreprise.<br/>
                             J'apprécie les challenges et je suis toujours motivé pour en apprendre d'avantage et enthousiaste à l'idée d'accomplir mes missions.<br/><br/>                            
                         </p>
+                        <a href="https://challenge-monedieres.herokuapp.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            title="Site: challenge-monédières"
+                            id="current-project"
+                        >
+                            Projet en cours de réalisation (APIRest et site "client" pour un challenge sportif)
+                        </a>
                         <a href="https://space-tourism-challenge.herokuapp.com/" 
                             target="_blank" 
                             rel="noopener noreferrer"

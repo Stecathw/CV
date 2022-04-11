@@ -3,7 +3,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { FaHome, FaImages, FaAddressBook } from "react-icons/fa";
-import { MdWork } from "react-icons/md";
+// import { MdWork } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 
 const Nav = () => {
