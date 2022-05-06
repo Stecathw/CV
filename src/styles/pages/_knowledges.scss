@@ -4,11 +4,11 @@
     justify-content:center;
     align-items: center;
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 50% 50%;
     grid-column-gap: 2rem;
     grid-template-areas: 
-      "Ll O"
-      "Ll H";
+      "Ll Ll"
+      "O H";
 
     .languages {
         grid-area: Ll;
@@ -24,9 +24,83 @@
           "frameworks";
         .languagesList {
             grid-area: languages;
+            .languagesIcons {
+                display : flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding-left: 0;
+                svg {
+                    height: 2.5rem;
+                    width: auto;
+                    
+                }
+                li {
+                    animation: fadeIn 0.5s linear;
+                    animation-fill-mode: both;
+                    
+                }
+                $total-items: 10;
+                // Set delay per List Item
+                @for $i from 1 through $total-items {
+                    li:nth-child(#{$i}) {
+                        animation-delay: .25s * $i;
+                    }
+                }        
+                // Keyframe animation
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                        top: 100px;
+                    }
+                    75% {
+                        opacity: 0.5;
+                        top: 0px;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                } 
+            }
         }
         .frameworksList {
             grid-area: frameworks;
+            .frameworksIcons {
+                display : flex;
+                flex-direction: row;
+                justify-content: space-around;
+                padding-left: 0;
+                svg {
+                    height: 2.5rem;
+                    width: auto;
+                    animation: fadeIn 0.5s linear;
+                }
+                li {
+                    animation: fadeIn 0.5s linear;
+                    animation-fill-mode: both;
+                    
+                }
+                $total-items: 10;
+                // Set delay per List Item
+                @for $i from 1 through $total-items {
+                    li:nth-child(#{$i}) {
+                        animation-delay: .25s * $i;
+                    }
+                }        
+                // Keyframe animation
+                @keyframes fadeIn {
+                    0% {
+                        opacity: 0;
+                        top: 100px;
+                    }
+                    75% {
+                        opacity: 0.5;
+                        top: 0px;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                } 
+            }
         }
         
         .xp {
@@ -163,6 +237,24 @@
         grid-template-areas: 
           "Ll Ll"
           "O H";
+        .languages {
+            .languagesList {
+                .languagesIcons {
+                    svg {
+                        height: 1.8rem;
+                        width: auto;
+                    }
+                }
+            }
+            .frameworksList {
+                .frameworksIcons {
+                    svg {
+                        height: 1.8rem;
+                        width: auto;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -174,5 +266,23 @@
           "Ll"
           "O" 
           "H";
+          .languages {
+            .languagesList {
+                .languagesIcons {
+                    svg {
+                        height: 1.2rem;
+                        width: auto;
+                    }
+                }
+            }
+            .frameworksList {
+                .frameworksIcons {
+                    svg {
+                        height: 1.2rem;
+                        width: auto;
+                    }
+                }
+            }
+        }
     }
 }

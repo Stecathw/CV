@@ -38,6 +38,18 @@
                 text-decoration: underline;
             }
         }
+        .alternance {
+            text-align: center;
+            width: fit-content;
+            margin-right: auto;
+            margin-left: auto;
+            border: 1px solid $color-2;
+            border-radius: 25px;
+            padding: 1rem 2rem;
+            h4 {
+                text-transform: uppercase;
+            }
+        }
         .pdf {            
             margin-bottom: 5vh;
             text-align: center;
