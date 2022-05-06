@@ -3,7 +3,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { FaHome, FaImages, FaAddressBook } from "react-icons/fa";
-// import { MdWork } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 
 const Nav = () => {
@@ -11,7 +10,7 @@ const Nav = () => {
         <div className="navbar">
 
             <div className="profile">
-                <img src="./media/avatar.png" alt="profile-img" id="profile-img"/>
+                <img src="./media/avatar.png" alt="avatar-img" id="avatar-img"/>
                 <h2>William SAINTE-CATHERINE</h2>
                 <h3>Développeur web</h3>
             </div>
